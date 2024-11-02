@@ -1,0 +1,112 @@
+{
+  "employees": [
+    {
+      "id": "3",
+      "name": "abdallah benjelloun",
+      "age": "30",
+      "position": "data scientist",
+      "photo": "ph9.jpg",
+      "city": "marrakech",
+      "department": {
+        "id": "1",
+        "name": "engineering"
+      }
+    },
+    {
+      "id": "4",
+      "name": "samira bouziane",
+      "age": "40",
+      "position": "hr manager",
+      "photo": "ph4.jpg",
+      "city": "tangier",
+      "department": {
+        "id": "3",
+        "name": "human resources"
+      }
+    },
+    {
+      "id": "5",
+      "name": "karim louchi",
+      "age": "29",
+      "position": "ux designer",
+      "photo": "ph5.jpg",
+      "city": "fes",
+      "department": {
+        "id": "4",
+        "name": "design"
+      }
+    },
+    {
+      "id": "6",
+      "name": "sofia el idrissi",
+      "age": "27",
+      "position": "marketing specialist",
+      "photo": "ph6.jpg",
+      "city": "agadir",
+      "department": {
+        "id": "2",
+        "name": "marketing"
+      }
+    },
+    {
+      "id": "7",
+      "name": "youssef habbani",
+      "age": "45",
+      "position": "finance manager",
+      "photo": "ph7.jpg",
+      "city": "oujda",
+      "department": {
+        "id": "5",
+        "name": "finance"
+      }
+    },
+    {
+      "id": "8",
+      "name": "leila meskini",
+      "age": "31",
+      "position": "operations manager",
+      "photo": "ph8.jpg",
+      "city": "meknes",
+      "department": {
+        "id": "6",
+        "name": "operations"
+      }
+    },
+    {
+      "id": "9",
+      "name": "rachid el azzouzi",
+      "age": "38",
+      "position": "it support specialist",
+      "photo": "ph9.jpg",
+      "city": "laayoune",
+      "department": {
+        "id": "7",
+        "name": "it"
+      }
+    },
+    {
+      "id": "10",
+      "name": "nadia ouazzani",
+      "age": "34",
+      "position": "legal advisor",
+      "photo": "ph10.jpg",
+      "city": "essaouira",
+      "department": {
+        "id": "8",
+        "name": "legal"
+      }
+    },
+    {
+      "id": "0",
+      "name": "faycal",
+      "age": "19",
+      "position": "full stack",
+      "photo": "ph9.jpg",
+      "city": "fes",
+      "department": {
+        "id": "0",
+        "name": "coding"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+/* Custom scrollbar styles */
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #2d3748; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+.active {
+  color: rgb(14 165 233);
+}
+body {
+  background-color: black;
+}
+.myform table {
+  height: 50px;
+  width: 100%;
+}
+.myform table td {
+  height: 0px;
+}
+.myform input {
+  width: 50%;
+  height: 30px;
+  font-size: medium;
+  margin: 0;
+}
+.myform tr td {
+  height: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.myform label::after {
+  content: "  :";
+}
+/* For Firefox */
+/* scrollbar-width: thin; 
+scrollbar-color: #4a5568 #2d3748;  */
