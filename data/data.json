@@ -5,7 +5,7 @@
       "name": "abdallah benjelloun",
       "age": "30",
       "position": "data scientist",
-      "photo": "ph9.jpg",
+      "photo": "ph3.jpg",
       "city": "marrakech",
       "department": {
         "id": "1",
@@ -97,15 +97,243 @@
       }
     },
     {
-      "id": "0",
-      "name": "faycal",
-      "age": "19",
-      "position": "full stack",
-      "photo": "ph9.jpg",
-      "city": "fes",
+      "id": "11",
+      "name": "omar saidi",
+      "age": "36",
+      "position": "software engineer",
+      "photo": "ph4.jpg",
+      "city": "casablanca",
       "department": {
-        "id": "0",
-        "name": "coding"
+        "id": "1",
+        "name": "engineering"
+      }
+    },
+    {
+      "id": "12",
+      "name": "amira bouchra",
+      "age": "42",
+      "position": "senior recruiter",
+      "photo": "ph5.jpg",
+      "city": "rabat",
+      "department": {
+        "id": "3",
+        "name": "human resources"
+      }
+    },
+    {
+      "id": "13",
+      "name": "mustapha kabbaj",
+      "age": "25",
+      "position": "junior developer",
+      "photo": "ph3.jpg",
+      "city": "chefchaouen",
+      "department": {
+        "id": "1",
+        "name": "engineering"
+      }
+    },
+    {
+      "id": "14",
+      "name": "hiba rahmouni",
+      "age": "33",
+      "position": "brand manager",
+      "photo": "ph7.jpg",
+      "city": "tetouan",
+      "department": {
+        "id": "2",
+        "name": "marketing"
+      }
+    },
+    {
+      "id": "15",
+      "name": "mehdi bennis",
+      "age": "39",
+      "position": "data analyst",
+      "photo": "ph8.jpg",
+      "city": "safi",
+      "department": {
+        "id": "1",
+        "name": "engineering"
+      }
+    },
+    {
+      "id": "16",
+      "name": "mouna chouaib",
+      "age": "28",
+      "position": "pr specialist",
+      "photo": "ph3.jpg",
+      "city": "beni mellal",
+      "department": {
+        "id": "2",
+        "name": "marketing"
+      }
+    },
+    {
+      "id": "17",
+      "name": "anass el yacoubi",
+      "age": "46",
+      "position": "head of finance",
+      "photo": "ph7.jpg",
+      "city": "taza",
+      "department": {
+        "id": "5",
+        "name": "finance"
+      }
+    },
+    {
+      "id": "18",
+      "name": "asmaa amrani",
+      "age": "37",
+      "position": "office administrator",
+      "photo": "ph8.jpg",
+      "city": "kenitra",
+      "department": {
+        "id": "6",
+        "name": "operations"
+      }
+    },
+    {
+      "id": "19",
+      "name": "adil belkacem",
+      "age": "41",
+      "position": "supply chain analyst",
+      "photo": "ph9.jpg",
+      "city": "mohammedia",
+      "department": {
+        "id": "6",
+        "name": "operations"
+      }
+    },
+    {
+      "id": "20",
+      "name": "hanane belhaj",
+      "age": "32",
+      "position": "content strategist",
+      "photo": "ph1.jpg",
+      "city": "khemisset",
+      "department": {
+        "id": "2",
+        "name": "marketing"
+      }
+    },
+    {
+      "id": "21",
+      "name": "simo triki",
+      "age": "29",
+      "position": "database administrator",
+      "photo": "ph1.jpg",
+      "city": "nador",
+      "department": {
+        "id": "7",
+        "name": "it"
+      }
+    },
+    {
+      "id": "22",
+      "name": "zineb kamal",
+      "age": "35",
+      "position": "legal analyst",
+      "photo": "ph2.jpg",
+      "city": "berkane",
+      "department": {
+        "id": "8",
+        "name": "legal"
+      }
+    },
+    {
+      "id": "23",
+      "name": "hatim mezouari",
+      "age": "43",
+      "position": "it manager",
+      "photo": "ph3.jpg",
+      "city": "midelt",
+      "department": {
+        "id": "7",
+        "name": "it"
+      }
+    },
+    {
+      "id": "24",
+      "name": "laila oubelaid",
+      "age": "30",
+      "position": "hr assistant",
+      "photo": "ph4.jpg",
+      "city": "guelmim",
+      "department": {
+        "id": "3",
+        "name": "human resources"
+      }
+    },
+    {
+      "id": "25",
+      "name": "amine el ouafi",
+      "age": "26",
+      "position": "junior accountant",
+      "photo": "ph5.jpg",
+      "city": "larache",
+      "department": {
+        "id": "5",
+        "name": "finance"
+      }
+    },
+    {
+      "id": "26",
+      "name": "soumaya rahali",
+      "age": "44",
+      "position": "operations director",
+      "photo": "ph6.jpg",
+      "city": "el jadida",
+      "department": {
+        "id": "6",
+        "name": "operations"
+      }
+    },
+    {
+      "id": "27",
+      "name": "riad belmir",
+      "age": "38",
+      "position": "it security analyst",
+      "photo": "ph1.jpg",
+      "city": "ouarzazate",
+      "department": {
+        "id": "7",
+        "name": "it"
+      }
+    },
+    {
+      "id": "28",
+      "name": "imane jellab",
+      "age": "40",
+      "position": "corporate lawyer",
+      "photo": "ph2.jpg",
+      "city": "sidi kacem",
+      "department": {
+        "id": "8",
+        "name": "legal"
+      }
+    },
+    {
+      "id": "29",
+      "name": "hicham mounib",
+      "age": "4",
+      "position": "senior software engineer",
+      "photo": "ph9.jpg",
+      "city": "tanger",
+      "department": {
+        "id": "1",
+        "name": "engineering"
+      }
+    },
+    {
+      "id": "30",
+      "name": "meryem zahidi",
+      "age": "8",
+      "position": "digital marketing manager",
+      "photo": "ph3.jpg",
+      "city": "agadir",
+      "department": {
+        "id": "2",
+        "name": "marketing"
       }
     }
   ]
