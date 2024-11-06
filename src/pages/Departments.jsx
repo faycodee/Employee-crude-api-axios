@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 function Departments({ data }) {
   const [db, setDb] = useState({
@@ -7,7 +7,12 @@ function Departments({ data }) {
     Table2: [],
     schowt2: false,
   });
-
+const mytable =useRef()
+useEffect(() => {
+  if (db.schowt2  ) {
+    mytable.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}, [db.Table2]); 
   useEffect(() => {
     const updatedDepartments = data.employees
       .map((e) => e.department)
@@ -80,7 +85,7 @@ function Departments({ data }) {
           </tbody>
         </motion.table>
         {db.schowt2 && (
-          <motion.table className="mt-8 w-full max-w-3xl border-collapse bg-white shadow-lg rounded-lg overflow-hidden">
+          <motion.table ref={mytable} className="mt-8 w-full max-w-3xl border-collapse bg-white shadow-lg rounded-lg overflow-hidden">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr>
                 <th scope="col" class="px-6 py-3">
@@ -135,6 +140,7 @@ function Departments({ data }) {
             </tbody>
           </motion.table>
         )}
+       
       </div>
     </div>
   );
