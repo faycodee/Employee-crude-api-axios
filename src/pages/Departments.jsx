@@ -11,7 +11,9 @@ function Departments({ data }) {
   useEffect(() => {
     const updatedDepartments = data.employees
       .map((e) => e.department)
-      .sort((a, b) => a.id - b.id);
+      .filter((e, i, l) => i === l.findIndex((t) => t.name === e.name))
+      .sort((a, b) => a.id - b.id)
+      ;
     setDb({ departments: updatedDepartments });
   }, [data.employees]);
 
