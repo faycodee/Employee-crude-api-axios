@@ -85,7 +85,13 @@ const Employees = ({
       txtCity.current.value &&
       txtDepid.current.value &&
       txtDepname.current.value
-    ) {
+    ) 
+    {
+      const idExist =data.find((e)=>e.id==txtId.current.value)
+      if (idExist) {
+        alert("This employee's ID already exists. Please enter another ID.")
+        return false
+      }
       const employee = {
         id: txtId.current.value,
         name: txtName.current.value,
