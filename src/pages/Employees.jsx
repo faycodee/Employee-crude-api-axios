@@ -88,10 +88,7 @@ const Employees = ({
     ) 
     {
       const idExist =data.find((e)=>e.id==txtId.current.value)
-      if (idExist) {
-        alert("This employee's ID already exists. Please enter another ID.")
-        return false
-      }
+     
       const employee = {
         id: txtId.current.value,
         name: txtName.current.value,
@@ -106,6 +103,10 @@ const Employees = ({
       };
 
       if (btnval === "Add") {
+        if (idExist) {
+          alert("This employee's ID already exists. Please enter another ID.")
+          return false
+        }
         // Add new employee
         await axios.post("http://localhost:8000/employees", employee);
         setDataGlobal(employee);

@@ -85,18 +85,6 @@
       }
     },
     {
-      "id": "10",
-      "name": "nadia ouazzani",
-      "age": "34",
-      "position": "legal advisor",
-      "photo": "ph10.jpg",
-      "city": "essaouira",
-      "department": {
-        "id": "8",
-        "name": "legal"
-      }
-    },
-    {
       "id": "11",
       "name": "omar saidi",
       "age": "36",
