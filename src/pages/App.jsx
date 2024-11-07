@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import { useState, useEffect, useParams } from "react";
 import axios from "axios";
 import Departments from "./Departments";
+import Preloader from './proLoader';
 
 const App = () => {
   useEffect(async () => {
@@ -76,11 +77,13 @@ const App = () => {
         </header>
         <Routes>
           <Route path="/" element={<Hero />} />
-
+          
           <Route path="/employees">
             <Route
               index
               element={
+                <>
+                <Preloader/>
                 <Employees
                   schowVid={data.schowVid}
                   data={data.employees}
@@ -88,7 +91,7 @@ const App = () => {
                   deletEmployee={deletEmployee}
                   setData={setData}
                   setDataGlobal={setDataGlobal}
-                />
+                /></>
               }
             />
             <Route
