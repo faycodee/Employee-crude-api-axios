@@ -1,18 +1,6 @@
 {
   "employees": [
     {
-      "id": "3",
-      "name": "abdallah benjelloun",
-      "age": "30",
-      "position": "data scientist",
-      "photo": "ph3.jpg",
-      "city": "marrakech",
-      "department": {
-        "id": "1",
-        "name": "engineering"
-      }
-    },
-    {
       "id": "4",
       "name": "samira bouziane",
       "age": "40",

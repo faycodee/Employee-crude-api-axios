@@ -10,6 +10,7 @@ import Preloader from './proLoader';
 const App = () => {
   useEffect(async () => {
     await axios
+      // .get("http://localhost:8000/employees")
       .get("http://localhost:8000/employees")
       .then((res) => setData({ ...data, employees: res.data }));
   }, []);

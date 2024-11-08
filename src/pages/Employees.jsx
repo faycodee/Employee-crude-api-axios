@@ -108,14 +108,18 @@ const Employees = ({
           return false
         }
         // Add new employee
-        await axios.post("http://localhost:8000/employees", employee);
+        await axios.post("http://localhost:8000/employees", employee 
+          
+        );
         setDataGlobal(employee);
         alert("Added successfully!");
       } else {
         // Update existing employee
         await axios.put(
           `http://localhost:8000/employees/${employee.id}`,
-          employee
+          
+          employee 
+        
         );
         setDataGlobal(employee, "edit");
         setBtnval("Add");
