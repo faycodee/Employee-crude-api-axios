@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "json-server --watch data/data.json --port 8000"
+    "start": "json-server --watch db.json --port 8000"
   },
   "dependencies": {
     "axios": "^1.7.7",
