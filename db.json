@@ -2,7 +2,7 @@
   "employees": [
     {
       "id": "4",
-      "name": "samira bouziane",
+      "name": "samira bouziane 88",
       "age": "40",
       "position": "hr manager",
       "photo": "ph4.jpg",
@@ -301,15 +301,15 @@
       }
     },
     {
-      "id": "30",
-      "name": "meryem zahidi",
-      "age": "8",
-      "position": "digital marketing manager",
-      "photo": "ph3.jpg",
-      "city": "agadir",
+      "id": "2",
+      "name": "2",
+      "age": "2",
+      "position": "2",
+      "photo": "employeeVid1-Cover.jpg",
+      "city": "2",
       "department": {
         "id": "2",
-        "name": "marketing"
+        "name": "2"
       }
     }
   ]

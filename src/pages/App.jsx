@@ -8,10 +8,13 @@ import Departments from "./Departments";
 import Preloader from './proLoader';
 
 const App = () => {
+  const apiUrl = process.env.NODE_ENV === 'production'
+  ? "https://your-render-url.onrender.com/employees" // رابط API في بيئة الإنتاج
+  : "http://localhost:8000/employees"; // رابط API في بيئة التطوير
   useEffect(async () => {
     await axios
       // .get("http://localhost:8000/employees")
-      .get("http://localhost:8000/employees")
+      .get(apiUrl)
       .then((res) => setData({ ...data, employees: res.data }));
   }, []);
   const [data, setData] = useState({
@@ -54,7 +57,7 @@ const App = () => {
   };
   const deletEmployee = (id, name) => {
     return confirm("you want delete " + name + " are you sure ??")
-      ? axios.delete(`http://localhost:8000/employees/${id}`).then((res) => {
+      ? axios.delete(`${apiUrl}/${id}`).then((res) => {
           setData({
             ...data,
             employees: data.employees.filter((x) => x.id !== id),

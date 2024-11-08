@@ -9,7 +9,9 @@ import {
 import axios from "axios";
 // import { a } from "framer-motion/client";
 import { NavLink, Link, useParams } from "react-router-dom";
-
+const apiUrl = process.env.NODE_ENV === 'production'
+? "https://your-render-url.onrender.com/employees" // رابط API في بيئة الإنتاج
+: "http://localhost:8000/employees"; // رابط API في بيئة التطوير
 const Employees = ({
   schowVid,
   data,
@@ -108,7 +110,7 @@ const Employees = ({
           return false
         }
         // Add new employee
-        await axios.post("http://localhost:8000/employees", employee 
+        await axios.post(apiUrl, employee 
           
         );
         setDataGlobal(employee);
@@ -116,7 +118,7 @@ const Employees = ({
       } else {
         // Update existing employee
         await axios.put(
-          `http://localhost:8000/employees/${employee.id}`,
+          `${apiUrl}/${employee.id}`,
           
           employee 
         
@@ -156,7 +158,7 @@ const Employees = ({
   const handlerCharger = (id) => {
     setTSearch([]);
     funschowVid(true);
-    axios.get(`http://localhost:8000/employees/${id}`).then((res) => {
+    axios.get(`${apiUrl}/${id}`).then((res) => {
       charger(res.data);
     });
   };
