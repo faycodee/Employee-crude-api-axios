@@ -9,9 +9,10 @@ import {
 import axios from "axios";
 // import { a } from "framer-motion/client";
 import { NavLink, Link, useParams } from "react-router-dom";
-const apiUrl = process.env.NODE_ENV === 'production'
-? "https://your-render-url.onrender.com/employees" // رابط API في بيئة الإنتاج
-: "http://localhost:8000/employees"; // رابط API في بيئة التطوير
+const apiUrl =
+  process.env.NODE_ENV === "production"
+    ? "https://employee-crude-api-axios.onrender.com/employees" // رابط API في بيئة الإنتاج
+    : "http://localhost:8000/employees"; // رابط API في بيئة التطوير
 const Employees = ({
   schowVid,
   data,
@@ -20,7 +21,7 @@ const Employees = ({
   setDataGlobal,
 }) => {
   const [btnval, setBtnval] = useState("Add");
-  const [tSearch, setTSearch] = useState([ ]);
+  const [tSearch, setTSearch] = useState([]);
 
   const myform = useRef();
   const txtmot = useRef();
@@ -87,10 +88,9 @@ const Employees = ({
       txtCity.current.value &&
       txtDepid.current.value &&
       txtDepname.current.value
-    ) 
-    {
-      const idExist =data.find((e)=>e.id==txtId.current.value)
-     
+    ) {
+      const idExist = data.find((e) => e.id == txtId.current.value);
+
       const employee = {
         id: txtId.current.value,
         name: txtName.current.value,
@@ -106,22 +106,19 @@ const Employees = ({
 
       if (btnval === "Add") {
         if (idExist) {
-          alert("This employee's ID already exists. Please enter another ID.")
-          return false
+          alert("This employee's ID already exists. Please enter another ID.");
+          return false;
         }
         // Add new employee
-        await axios.post(apiUrl, employee 
-          
-        );
+        await axios.post(apiUrl, employee);
         setDataGlobal(employee);
         alert("Added successfully!");
       } else {
         // Update existing employee
         await axios.put(
           `${apiUrl}/${employee.id}`,
-          
-          employee 
-        
+
+          employee
         );
         setDataGlobal(employee, "edit");
         setBtnval("Add");
@@ -149,11 +146,10 @@ const Employees = ({
         e.department.id.toString().includes(searchTerm) ||
         e.department.name.includes(searchTerm)
     );
-  
+
     setTSearch(nTable);
-    console.log(nTable); 
+    console.log(nTable);
   };
-  
 
   const handlerCharger = (id) => {
     setTSearch([]);
@@ -515,7 +511,7 @@ const List = ({
   handlerCharger,
 }) => {
   let dataEE = dataE;
-  let t = tSearch.length>0?tSearch:dataEE ;
+  let t = tSearch.length > 0 ? tSearch : dataEE;
   return (
     <div class="relative shadow-md sm:rounded-lg w-[90%] flex flex-col justify-center items-center ">
       <motion.h1
@@ -543,12 +539,14 @@ const List = ({
       </motion.p>
 
       <motion.input
-      placeholder="Search by id,name,..."
-      className="px-9 py-3 rounded-xl"
+        placeholder="Search by id,name,..."
+        className="px-9 py-3 rounded-xl"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2, delay: 0.7 }}
-       type="text" onInput={(e) => SSearch(e)} />
+        type="text"
+        onInput={(e) => SSearch(e)}
+      />
 
       <motion.div
         className="mt-8"
